@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="success.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="spContainer">
+        
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded",conformSubscription)
+    function conformSubscription(){
+    let container = document.querySelector(".spContainer")
+    let cfnMsg = document.createElement('div')
+    let emailId = JSON.parse(sessionStorage.getItem('email'))
+    cfnMsg.innerHTML=`<div>
+        <img src="assets/images/icon-list.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>A conformation email has been sent to <span>${emailId}</span>.Please open it and click the button inside to confirm your subscription.</p>
+        <button>Dismiss message</button>
+        </div>`
+    container.append(cfnMsg)
+    }
+</script>
+</html>

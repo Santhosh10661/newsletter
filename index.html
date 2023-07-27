@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="NL.css" />
+    <title>newsletter</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftSide">
+        <h1>stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="assets/images/icon-list.svg" alt="" id="tickIcon" />Product discovery and building what matters</li>
+          <li><img src="assets/images/icon-list.svg" alt="" />Measuring to ensureupdates are a success</li>
+          <li><img src="assets/images/icon-list.svg" alt="" />And much more!</li>
+        </ul>
+        <form action="success.html" method="get" class="form">
+           <div class="inputBox">
+             <label for="emailId" id="emailLabel">Email address</label>
+             <p id="errMsg"></p> 
+             <input type="text" id="emailId" placeholder="email@company.com" />                   
+           </div>
+          <input type="submit" value="Subscribe to monthly newsletter" class="submitBtn"/>
+        </form>
+      </div>
+      <div id="rightSide">
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
